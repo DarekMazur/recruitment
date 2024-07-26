@@ -1,0 +1,70 @@
+{
+  "noPosts": "Stwórz pierwszy wpis!",
+  "addPost": "Stwórz wpis",
+  "noPosts": "Stwórz pierwszy post",
+  "error": "Nie udało się pobrać postów",
+  "menu": {
+    "home": "Strona główna",
+    "profile": "Moje posty",
+    "log": {
+      "in": "Zaloguj",
+      "out": "Wyloguj"
+    }
+  },
+  "login": {
+    "header": "Czy chcesz się zalogować?",
+    "button": "Zaloguj",
+    "incorrect": "Niepoprawny e-mail",
+    "email": "E-mail",
+    "confirmLogin": "Zalogowano jako {{user}}",
+    "confirmLogout": "Wylogowano poprawnie!",
+    "dialog": {
+      "title": "Zaloguj się",
+      "message": "Musisz się zalogować, aby publikować posty.",
+      "email": "E-mail",
+      "button": {
+        "cancel": "Anuluj",
+        "login": "Zaloguj"
+      }
+    }
+  },
+  "404": {
+    "header": "Chyba się zgubiłeś",
+    "description": "strona, której szukasz jest niedostępna!",
+    "cta": "Wróć"
+  },
+  "delete": {
+    "authorDelete": "Możesz usuwać wyłącznie własne posty!",
+    "button": {
+      "close": "Zamknij"
+    },
+    "confirm": {
+      "confirmHeader": "Czy napewno chcesz usunąć ten post?",
+      "confirmMessage": "Nie będziesz mieć możliwości cofnąć tej akcji.",
+      "button": {
+        "cancel": "Anuluj",
+        "confirm": "Potwierdź"
+      }
+    },
+    "alert": {
+      "success": "Post usunięty",
+      "error": "O nie, coś poszło nie tak"
+    }
+  },
+  "create": {
+    "header": "Utwórz post",
+    "inputLabel": "Stwórz coś niesamowitego!!!",
+    "noUserAlert": "Aby opublikować post musisz być zalogowany.",
+    "authorEdit": "Możesz edytować wyłącznie własne posty!",
+    "alert": {
+      "success": "Opubliikowano post",
+      "error": "O nie, coś poszło nie tak"
+    },
+    "button": {
+      "cancel": "Anuluj",
+      "send": "Wyślij!",
+      "login": "Zaloguj",
+      "close": "Zamknij"
+    }
+  }
+}

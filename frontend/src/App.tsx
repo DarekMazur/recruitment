@@ -1,16 +1,15 @@
 import { FC } from 'react';
 
-import { Box, Paper, Typography } from '@mui/material';
+import Root from '@/src/pages/Root';
+import AppProviders from '@/src/utils/providers/AppProviders';
 
 import './styles/main.scss';
 
 const App: FC = () => {
   return (
-    <Box className="center">
-      <Paper sx={{ padding: 4 }}>
-        <Typography variant="h6">Hello, please start here. 🙂</Typography>
-      </Paper>
-    </Box>
+    <AppProviders>
+      <Root />
+    </AppProviders>
   );
 };
 

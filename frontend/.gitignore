@@ -167,3 +167,5 @@ frontend/.env.*
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/go,macos,windows,linux,react,visualstudiocode,yarn
+
+.env

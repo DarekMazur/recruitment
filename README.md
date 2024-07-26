@@ -1,109 +1,169 @@
-# Frontend Developer Recruitment Task
+# TWIXER APP
 
-Welcome! This repository is designed to test your skills as a frontend developer. The task involves working with a backend server and creating a simple Twitter-like application on the frontend with full CRUD (Create, Read, Update, Delete) capabilities.
+<p align="center">
 
-## Repository Structure
+<img alt="" src="https://res.cloudinary.com/ddyqnp7pp/image/upload/v1722031315/logo_wlu3d0.png" align="center" width="400" />
+</p>
 
-The repository contains two main folders:
+## Table of Contents
+1. [Introduction](#1-introduction)
+2. [Requirements](#2-requirements)
+3. [Technologies](#3-technologies)
+4. [Installation](#4-installation)
+5. [Running](#5-running)
+6. [Project Structure](#6-project-structure)
+7. [API Schema](#7-api-schema)
+8. [Testing](#8-testing)
+9. [Production Version](#9-production-version)
 
-1. **backend**
-2. **frontend**
+## 1. Introduction
+The Twixer application is designed to emulate basic Twitter functionalities such as displaying, creating, updating, and deleting posts. Built using React, Redux, Material-UI, and React Router, this application ensures a seamless user experience. Key libraries such as Redux Toolkit and Material-UI enhance the functionality and user interface.
 
-### Backend
+## 2. Requirements
+- Node.js (v20.11.1 or higher)
+- Yarn (v4.0.2 or higher) or npm (10.2.4 or higher)
 
-The `Backend` folder contains a simple JSON server which will serve as an example API. This server allows you to perform CRUD operations on posts or any other structures you may need. To get the backend running, follow these steps:
+## 3. Technologies
+The application utilizes the following technologies:
 
-1. **Navigate to the Backend Folder**:
+- React (18.2.0)
+- Redux Toolkit (2.2.6)
+- Material-UI (5.11.8)
+- React Router (6.25.1)
+- TypeScript (4.7.4)
+
+## 4. Installation
+To install the application, follow these steps:
+
+### Using npm
+1. Clone the repository:
     ```bash
-    cd backend
+    git clone https://github.com/yourusername/simple-twitter-like-app.git
     ```
 
-2. **Install Dependencies**:
+2. Navigate to the application directory:
+    ```bash
+    cd simple-twitter-like-app
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Using Yarn
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/DarekMazur/evelstar.git
+    ```
+
+2. Navigate to the application directory:
+    ```bash
+    cd you-app-directory
+    ```
+
+3. Install dependencies:
     ```bash
     yarn install
     ```
 
-3. **Start the JSON Server**:
-    ```bash
-    yarn dev
-    ```
+## 5. Running
+To run the development version of the application, execute the following command:
 
-   The server will run on `http://localhost:3000` and provide endpoints for CRUD operations on posts.
+### Run backend
 
-   Example to create a post:
-   ```bash
-   POST http://localhost:3000/api/posts
-   ``` 
+#### Using npm
+```bash
+npm run start-server
+```
 
-   Example to get a list of posts 
-   ```bash
-   GET http://localhost:3000/api/posts
-   ```
+#### Using Yarn
+```bash
+yarn start-server
+```
 
-### Frontend
+Backend will be available at http://localhost:3000.
 
-The `Frontend` folder is where you will create your application. Your task is to build a simple Twitter-like application with the following requirements:
+### Run frontend
 
-1. **Display Posts**:
-   - Fetch and display a list of posts from the backend server.
+#### Using npm
+```bash
+npm run start
+```
 
-2. **Create Post**:
-   - Provide a form to create a new post. The new post should be sent to the backend server and added to the list of posts.
-   - Example to create a post: Send a POST request to `/api/posts`.
+#### Using Yarn
+```bash
+yarn start
+```
 
-3. **Update Post**:
-   - Allow users to edit an existing post. The updated post should be sent to the backend server and updated in the list.
+The application will be available at http://localhost:8081. Before running, please check your .env file.
 
-4. **Delete Post**:
-   - Allow users to delete a post. The deletion should be sent to the backend server and the post should be removed from the list.
+In the main directory, you can find a .env.example file with all the variables needed to connect the application with your backend.
 
-### Getting Started
+## 6. Project Structure
 
-1. **Install Dependencies**:
-    - Navigate to the `Frontend` folder and install the required dependencies.
-    ```bash
-    cd frontend
-    yarn install
-    ```
+```
+simple-twitter-like-app/
+├── src/
+│   ├── assets/           # Application assets
+│   ├── components/       # Application components
+│   ├── i18n/             # Translations
+│   ├── pages/            # Application pages (views)
+│   ├── store/            # Redux store
+│   ├── styles/           # Global styles
+│   ├── mocks/            # Mock Service Worker
+│   ├── utils/            # Utility functions
+│   ├── App.tsx           # Main application component
+│   ├── index.tsx         # Application entry point
+│   ├── main.tsx          # Application main root
+│   └── setupTests.ts     # Tests configuration file
+├── .eslintrc             # ESLint configuration
+├── .gitignore            # Git ignore file
+├── package.json          # npm manifest file
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.js        # Vite configuration
+└── yarn.lock             # Yarn lock file
+```
 
-2. **Start the Frontend Server**:
-    ```bash
-    yarn start
-    ```
+## 7. API Schema
 
-   The application should run on `http://localhost:8081` or another port specified by your configuration.
+### Post
 
-### Requirements
+- data:
+  - postId: Unique identifier (string)
+  - body: Text content of the post (string)
+  - author: Author of the post (string)
+  - createdAt: Creation date (number, milliseconds format)
+  - updatedAt: Last update date (number, milliseconds format)
+- id: Unique identifier (number)
 
-- Use **React**, **Redux**, **MaterialUI**, and **ReactRouter** to demonstrate your skills.
-- Propose a design for the application.
-- Write tests for your components to ensure code quality and reliability.
+## 8. Testing
 
-### Tips
+To run unit tests, execute the following command:
 
-- Ensure your UI is user-friendly and responsive.
-- Handle API errors gracefully and provide appropriate feedback to the user.
-- Write clean, maintainable, and well-documented code.
+### Using npm
 
+```bash
+   npm run test
+```
 
-### Submission
+### Using Yarn
+```bash
+   yarn test
+```
 
-Once you have completed the task, please submit your solution by following these steps:
+## 9. Production Version
 
-1. **Create a New Branch**:
-   - Name the branch with your name.
-   ```bash
-   git checkout -b your-name
-   ```
+To build the production version of the application, use the following command:
 
-2. **Push the Branch to the Repository**:
-   ```bash
-   git add .
-   git commit -m "Complete recruitment task"
-   git push origin your-name
-   ```
+### Using npm
+```bash
+npm run build
+```
 
-3. **Notify Us**:
-   - Let us know when you are ready for your submission to be reviewed.
+### Using Yarn
+```bash
+yarn build
+```
 
-Ensure all necessary instructions to run your application are included in the repository.
+The resulting files will be available in the dist directory, ready for deployment on a production server. Note that this build process pertains only to the frontend part of the application. Ensure you have also set up and configured the backend server for complete deployment.

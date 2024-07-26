@@ -1,0 +1,70 @@
+{
+  "noPosts": "Let's create first post!",
+  "addPost": "Add new post",
+  "noPosts": "Create first post",
+  "error": "Posts failed to download",
+  "menu": {
+    "home": "Home",
+    "profile": "My posts",
+    "log": {
+      "in": "Login",
+      "out": "Logout"
+    }
+  },
+  "login": {
+    "header": "Do you want to login?",
+    "button": "Login",
+    "incorrect": "Incorrect email",
+    "email": "E-mail",
+    "confirmLogin": "Logged in as {{user}}",
+    "confirmLogout": "Logged out successfully!",
+    "dialog": {
+      "title": "Login",
+      "message": "You must be logged in to publish a post.",
+      "email": "Email Address",
+      "button": {
+        "cancel": "Cancel",
+        "login": "Login"
+      }
+    }
+  },
+  "404": {
+    "header": "Look like you're lost",
+    "description": "the page you are looking for not available!",
+    "cta": "Go to Home"
+  },
+  "delete": {
+    "authorDelete": "You can only remove your own posts!",
+    "button": {
+      "close": "Close"
+    },
+    "confirm": {
+      "confirmHeader": "Are you sure you want to delete this post?",
+      "confirmMessage": "You will not be able to undo this action.",
+      "button": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "alert": {
+      "success": "Post deleted",
+      "error": "Oh no, something went wrong"
+    }
+  },
+  "create": {
+    "header": "Create post",
+    "inputLabel": "Let's create somethin awesome!!!",
+    "noUserAlert": "You must be logged in to publish a post.",
+    "authorEdit": "You can only edit your own posts!",
+    "alert": {
+      "success": "Post published",
+      "error": "Oh no, something went wrong"
+    },
+    "button": {
+      "cancel": "Cancel",
+      "send": "Send!",
+      "login": "Login",
+      "close": "Close"
+    }
+  }
+}
